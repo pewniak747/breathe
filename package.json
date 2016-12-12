@@ -1,0 +1,16 @@
+{
+  "name": "breathe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss --use autoprefixer --autoprefixer.browsers \"> 5%\" -o style.bundle.css style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-cli-simple": "^1.0.3"
+  }
+}
