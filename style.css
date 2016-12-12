@@ -40,6 +40,25 @@
   }
 }
 
+@keyframes ripple {
+	0% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+	50% {
+		opacity: 0;
+		transform: scale(1.0);
+	}
+	51% {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2.0);
+	}
+}
+
 @keyframes text-breathe {
   0% {
     transform: translateX(0);
@@ -77,4 +96,10 @@
   font-family: Helvetica serif;
 	text-anchor: end;
 	alignment-baseline: middle;
+}
+
+.ripple {
+  fill: #f0f0f0;
+  animation: ripple 10s ease-in-out 0s infinite;
+  transform-origin: center center;
 }
