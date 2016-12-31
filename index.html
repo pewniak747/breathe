@@ -20,6 +20,18 @@
         <circle class="circle" r="250" cx="500" cy="500"></circle>
       </svg>
     </div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
     <link rel="stylesheet" href="/style.bundle.css" />
   </body>
 </html>
