@@ -1,0 +1,212 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #f9f9f9;
+}
+
+@-webkit-keyframes circle-breathe {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  10% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  90% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+}
+
+@keyframes circle-breathe {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  10% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  90% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+}
+
+@-webkit-keyframes outer-circle-breathe {
+  0% {
+    -webkit-transform: scale(0.05);
+            transform: scale(0.05);
+  }
+  10% {
+    -webkit-transform: scale(0.05);
+            transform: scale(0.05);
+  }
+  90% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+}
+
+@keyframes outer-circle-breathe {
+  0% {
+    -webkit-transform: scale(0.05);
+            transform: scale(0.05);
+  }
+  10% {
+    -webkit-transform: scale(0.05);
+            transform: scale(0.05);
+  }
+  90% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+  }
+}
+
+@-webkit-keyframes ripple {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	51% {
+		opacity: 1;
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(2.0);
+		        transform: scale(2.0);
+	}
+}
+
+@keyframes ripple {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	51% {
+		opacity: 1;
+		-webkit-transform: scale(1.0);
+		        transform: scale(1.0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(2.0);
+		        transform: scale(2.0);
+	}
+}
+
+@-webkit-keyframes text-breathe {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+@keyframes text-breathe {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+.circle {
+  fill: #353277;
+  -webkit-animation: circle-breathe 5s ease-in-out 0s infinite alternate;
+          animation: circle-breathe 5s ease-in-out 0s infinite alternate;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.outer-circle {
+  fill: #8f8dcf;
+  -webkit-animation: outer-circle-breathe 5s ease-in-out 0s infinite alternate;
+          animation: outer-circle-breathe 5s ease-in-out 0s infinite alternate;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.breathe-text {
+  -webkit-animation: text-breathe 5s ease-in-out 0s infinite alternate;
+          animation: text-breathe 5s ease-in-out 0s infinite alternate;
+}
+
+.text {
+  fill: #333;
+  font-size: 44px;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-anchor: end;
+  alignment-baseline: central;
+}
+
+.ripple {
+  fill: #f0f0f0;
+  -webkit-animation: ripple 10s ease-in-out 0s infinite;
+          animation: ripple 10s ease-in-out 0s infinite;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
