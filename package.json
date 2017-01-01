@@ -8,7 +8,7 @@
     "build": "mkdir -p build && npm run build-static && npm run build-styles && npm run build-icons && npm run build-serviceworker",
     "build-static": "cp index.html manifest.json build",
     "build-styles": "postcss --use autoprefixer --autoprefixer.browsers \"> 5%\" -o build/style.bundle.css style.css",
-    "build-icons": "svgexport icon.svg build/icon-192.png 192:192 100% && svgexport icon.svg build/icon-168.png 168:168 100% && svgexport icon.svg build/icon-144.png 144:144 100% && svgexport icon.svg build/icon-96.png 96:96 100% && svgexport icon.svg build/icon-72.png 72:72 100% && svgexport icon.svg build/icon-48.png 48:48 100%",
+    "build-icons": "svgexport icon.svg build/icon-192.png 192:192 100% && svgexport icon.svg build/icon-168.png 168:168 100% && svgexport icon.svg build/icon-144.png 144:144 100% && svgexport icon.svg build/icon-96.png 96:96 100% && svgexport icon.svg build/icon-72.png 72:72 100% && svgexport icon.svg build/icon-48.png 48:48 100% && svgexport icon-apple.svg build/icon-192-apple.png 192:192 100%",
     "build-serviceworker": "cd build && sw-precache"
   },
   "keywords": [],
